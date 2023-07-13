@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b8a2d9e.css",
+    "main.js": "/static/js/main.c869ac11.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/tamim.jpg": "/static/media/tamim.0682ef1c0df873db7071.jpg",
+    "static/media/php.png": "/static/media/php.e2bb9fab9d8556959e5f.png",
+    "static/media/react.png": "/static/media/react.44319306359c7112276d.png",
+    "static/media/css.png": "/static/media/css.6402b604475346c0ff73.png",
+    "static/media/puppeter.png": "/static/media/puppeter.f3c24928a22036e4eb2d.png",
+    "static/media/laravel.png": "/static/media/laravel.e2a03d55a6c4adf27cd9.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.9b8a2d9e.css.map": "/static/css/main.9b8a2d9e.css.map",
+    "main.c869ac11.js.map": "/static/js/main.c869ac11.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b8a2d9e.css",
+    "static/js/main.c869ac11.js"
+  ]
+}
