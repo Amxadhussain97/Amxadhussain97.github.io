@@ -46,7 +46,7 @@ export default function Experience() {
                 },
               }}
             >
-              Karigor Solutions (2017-2020)
+              Karigor Solutions ( December 2022 - February 2023)
             </Typography>
 
             <Divider sx={{ my: 2 }} />
@@ -61,8 +61,7 @@ export default function Experience() {
                 }
               }}
             >
-              The training provided by universities in order to prepare people
-              to work in various sectors of the economy or areas of culture.
+             Developed full stack web application and maintained proper scalability and performances.
             </Typography>
           </Box>
         </Paper>
@@ -83,7 +82,7 @@ export default function Experience() {
                 },
               }}
             >
-              AmaderLab ( React | Laravel )
+            Web Developer Intern ( React | Laravel ) 
             </Typography>
             <Typography
               variant="caption"
@@ -96,7 +95,7 @@ export default function Experience() {
                 },
               }}
             >
-              Leading University (2017-2020)
+               AmaderLab ( August 2022 - October 2022)
             </Typography>
 
             <Divider sx={{ my: 2 }} />
@@ -111,8 +110,7 @@ export default function Experience() {
                 },
               }}
             >
-              The training provided by universities in order to prepare people
-              to work in various sectors of the economy or areas of culture.
+              Developed full stack web application and maintained proper scalability and performances.
             </Typography>
           </Box>
         </Paper>

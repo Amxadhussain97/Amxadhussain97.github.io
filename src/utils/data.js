@@ -1,6 +1,8 @@
 // import { HiOutlineDesktopComputer } from "react-icons/hi";
 // import { CiMobile1 } from "react-icons/ci";
 // import { MdWorkspacesOutline } from "react-icons/md";
+import sifatIMG from "./sifat.jpg"
+import monjurIMG from "./monjur.jpg"
 
 
 // export const projectExperience = [
@@ -24,99 +26,29 @@
 //   },
 // ];
 
-export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
-];
 
-export const workExp = [
-  {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
-  {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
-  {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
-];
 
 export const comments = [
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Sifat Ullah",
+    post: "Associate Software Engineer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./tamim.jpg",
+      "Tamim is a highly talented and experienced full-stack developer with solid programming knowledge. He possesses exceptional skills in various programming languages, frameworks, and tools, allowing him to deliver high-quality code that is efficient and well-documented. Tamim is known for his ability to quickly grasp complex concepts and find practical solutions. He is a strong communicator and collaborator, actively listening to others",
+    img: sifatIMG,
+  },
+  {
+    name: "Monjurul Karim ",
+    post: "Digital Marketer",
+    comment:"I highly recommend Amzad Tamim as a software developer. He consistently delivers high-quality code and demonstrates a deep understanding of software development principles. They are a proactive team player who effectively communicates and collaborates with colleagues",  img: monjurIMG,
   },
   {
     name: "Amzad Hussain",
     post: "Creative Manager",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+      "Tamim is a highly talented and experienced full-stack developer with solid programming knowledge. He possesses exceptional skills in various programming languages, frameworks, and tools, allowing him to deliver high-quality code that is efficient and well-documented. Tamim is known for his ability to quickly grasp complex concepts and find practical solutions. He is a strong communicator and collaborator, actively listening to others",
+     img: monjurIMG,
   },
-  {
-    name: "Amzad Hussain",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
+  
 ];
 
 export const sliderSettings = {

@@ -23,6 +23,7 @@ export default function Welcome() {
         }
       }
     >
+      <a className="anchor" id="home"></a>
       <Box>
         <Grid
           container
@@ -34,9 +35,7 @@ export default function Welcome() {
           }
         >
           <Grid item xs={12} sm={7}>
-          <Hidden implementation="css"
-              mdUp
-          >
+            <Hidden implementation="css" mdUp>
               <Box className={classes.devAnimation}>
                 <Lottie options={options} />
               </Box>
@@ -63,13 +62,17 @@ export default function Welcome() {
             <h1 className={classes.hi}>
               Hi, I'm <span className={classes.name}>Amzad Hussain Tamim</span>
             </h1>
+            
             <h2 className={classes.developer}>a Web Developer</h2>
             <p className={classes.developerBio}>
-              I am a full stack developer with 2 years of experience in web
-              development. I have worked with React, Node, Express, MongoDB,
-              MySQL, and Firebase. I have also worked with Material UI,
-              Bootstrap, and Tailwind CSS. I have experience in building
-              responsive websites and web applications.
+              As an experienced full-stack web developer and competitive
+              programmer, I am committed to providing high-quality software
+              solutions that meet customer demands. I am versatile and confident
+              in producing the best results for every project because I have a
+              solid understanding of programming languages including Javascript,
+              PHP, C/C++ and Python. I bring a dedication to excellence and a
+              commitment for creating user-friendly software, whether working
+              alone or with a team
             </p>
 
             <Box

@@ -61,9 +61,14 @@ export const useProjectStyles = makeStyles((theme) => ({
     color: "#646665",
   },
   projectTech:{
-    fontSize:'0.8rem !important',
+    fontSize:'0.6rem !important',
     [theme.breakpoints.down("sm")]: {
-      fontSize:'0.6rem !important',
+      fontSize:'0.5rem !important',
     }
-  }
+  },
+  // projectIMG:{
+  //   width:'100%',
+  //   height:'100%',
+
+  // }
 }));

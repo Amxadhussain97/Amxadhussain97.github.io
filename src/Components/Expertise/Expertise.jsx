@@ -6,8 +6,23 @@ import ECard from "./Card/ECard";
 export default function Expertise() {
   const classes = expertiseStyles();
 
+  const data = [
+    {
+      title: "Web Developing",
+      bio: "I have experience in building responsive websites and web applications. I use React in frontend and Laravel in backend for the web development.",
+    },
+    {
+      title: "Web Scraping",
+      // define bio as I can scrap any websites using puppeter js
+      bio: "I can scrap any websites using puppeter js",
+
+    }
+  ]
+
   return (
     <Box  sx={{ width: "100vw"}}>
+
+<a className="anchor" id="whatido"></a>
       <Box className={classes.expertiseHead} sx={{   px:"12%"}}>
         <Typography
           variant="overline"
@@ -42,7 +57,16 @@ export default function Expertise() {
         
         }}
       >
-        <ECard />
+        <Grid container spacing={2}>
+          {data.map((item, index) => {
+            return (
+              <Grid item xs={12} sm={6} md={6} key={index}>
+                <ECard title={item.title} bio={item.bio} />
+              </Grid>
+            );
+          })}
+        </Grid>
+        {/* <ECard /> */}
       </Box>
     </Box>
   );

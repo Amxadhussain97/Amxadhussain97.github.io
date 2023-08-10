@@ -123,6 +123,7 @@ export default function Skills() {
   return (
     <div>
       <Box className="flex-items-center">
+      <a className="anchor" id="skills"></a>
         <Typography
           variant="overline"
           display="block"

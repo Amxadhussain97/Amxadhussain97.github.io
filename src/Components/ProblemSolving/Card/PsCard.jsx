@@ -5,10 +5,14 @@ import Chip from "@mui/material/Chip";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-export default function PsCard({ img,title }) {
+export default function PsCard({ img,title,handle,link }) {
   const classes = useProblemSolvingStyles();
   const handleClick = () => {
-    console.info("You clicked the Chip.");
+    // make a different tabe with the link https://link.springer.com/article/10.1007/s42979-022-01077-1
+    window.open(
+      link,
+      "_blank"
+    );
   };
 
   const handleDelete = () => {
@@ -20,12 +24,17 @@ export default function PsCard({ img,title }) {
       {/* <Avatar variant="square" src = {img}  >N</Avatar>
        */}
       <img src={img} />
-      <Box sx={{ height: "100%", py: 2 }}>
+      <Box sx={{ height: {
+        xs:'100px',
+        sm:'100px'
+      }, py: 2,mb:5 }}>
         <Typography variant="h6" gutterBottom className={classes.psTitle}>
           {title}
         </Typography>
         <Typography variant="caption" display="block" gutterBottom className={classes.psDetails}>
-          Handle: TamimVai ( Max Rating: 1440)
+          Handle: {
+            handle
+          }
         </Typography>
         <Typography variant="caption" display="block" gutterBottom className={classes.psDetails}>
           Solved 600 problems

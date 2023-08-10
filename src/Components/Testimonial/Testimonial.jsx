@@ -15,6 +15,7 @@ const Testimonial = () => {
     // <motion.section
     <>
       <Box>
+      <a className="anchor" id="recommendations"></a>
         <Typography
           variant="overline"
           display="block"
@@ -28,7 +29,7 @@ const Testimonial = () => {
           }}
           className="section-title"
         >
-          VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
+          my recommendations
         </Typography>
 
         <Typography
@@ -47,7 +48,7 @@ const Testimonial = () => {
           }}
           className="section-tag"
         >
-          Reference
+         What People Say 
         </Typography>
       </Box>
       <section
@@ -68,7 +69,7 @@ const Testimonial = () => {
 
                 return (
                   <div className="person" key={id}>
-                    <img src={tIMG} alt="" />
+                    <img src={img} alt="" />
                     <p>{comment}</p>
                     <hr />
                     <div className="bio">

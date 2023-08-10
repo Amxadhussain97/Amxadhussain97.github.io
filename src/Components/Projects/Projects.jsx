@@ -12,13 +12,57 @@ import { useProjectStyles } from "./Styles/projectsStyles";
 import PublicIcon from "@mui/icons-material/Public";
 import LockIcon from "@mui/icons-material/Lock";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import ekcupchaIMG from "../../assets/images/projects/ekcupcha/ekcupcha.png";
+import madrasaIMG from "../../assets/images/projects/madrasa/madrasaone.png";
+import hecclIMG from "../../assets/images/projects/heccl/hecclone.png";
+import amaderlabMG from "../../assets/images/projects/amaderlab/amaderlab.png";
 
 export default function Projects() {
   const classes = useProjectStyles();
 
-  let items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let items = [
+    {
+      name: "Ek Cup Cha",
+      description:
+        "A website for the content creators to get money from their followers.",
+      tech: ["React","Laravel", "Redux", "Material UI"],
+      link: "http://ekcupcha.com/",
+      img: ekcupchaIMG,
+      type:"Public"
+    },
+    {
+      name: "Madrasa Website",
+      description:
+        "A full-stack educational institution management website",
+      tech: ["React","Laravel", "Redux", "Material UI","AG GRID"],
+      link: "http://test.amaderlab.xyz/",
+      img: madrasaIMG,
+      type:"Private"
+    },
+    {
+      name: "Heccl Website",
+      description:
+        "A full-stack website for  a fertilizer factory ",
+      tech: ["React","Laravel", "Redux", "Material UI","AG GRID"],
+      link: "http://infocube.amaderlab.xyz/",
+      img: hecclIMG,
+      type:"Private"
+    },
+    {
+      name: "Amaderlab Website",
+      // define description as a company portfolio website
+      description: "A website for a software company",
+      tech: ["React","Laravel",  "Material UI"],
+      link: "http://main.amaderlab.xyz/",
+      img: amaderlabMG,
+      type:"Public"
+
+      
+    }
+  ];
   return (
     <Box className="flex-items-center">
+      <a className="anchor" id="projects"></a>
       <Typography
         variant="overline"
         display="block"
@@ -32,7 +76,7 @@ export default function Projects() {
         }}
         className="section-title"
       >
-        VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
+        VISIT MY PROJECTS
       </Typography>
 
       <Typography
@@ -95,6 +139,10 @@ export default function Projects() {
                     overflow: "hidden",
                     borderRadius: "15px",
                     // background:'red'
+                    height:{
+                      xs:'200px',
+                      sm:'210px'
+                    }
                   }}
                 >
                   <Box className={classes.projectStatus}>
@@ -104,17 +152,22 @@ export default function Projects() {
                       gutterBottom
                       sx={{ fontSize: "0.6rem" }}
                     >
-                      Public
+                      {
+                        item?.type
+                      }
                     </Typography>
-                    <PublicIcon sx={{ fontSize: "0.9rem", pt: 0.3, mx: 0.5 }} />
+                 {
+                    item?.type === "Public" ?    <PublicIcon sx={{ fontSize: "0.9rem", pt: 0.3, mx: 0.5 }} />:    <LockIcon sx={{ fontSize: "0.9rem", pt: 0.3, mx: 0.5 }} />
+                 }
                   </Box>
                   <img
-                    src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
+                    src={item?.img}
                     alt="merchandise"
                     style={{
                       objectFit: "cover",
                       width: "100%",
                     }}
+                    className={classes?.projectIMG}
                   />
                 </Box>
 
@@ -130,16 +183,23 @@ export default function Projects() {
                     },
                   }}
                 >
-                  BughiChugi Site
+                  {item?.name}
                 </Typography>
 
                 <Typography
                   variant="body2"
                   gutterBottom
-                  sx={{ color: "#646665", fontSize: "0.8rem", my: 2 }}
+                  sx={{
+                    color: "#646665",
+                    fontSize: "0.8rem",
+                    my: 2,
+                    // height:{
+                    //   xs:'100px',
+                    //   sm:'100px'
+                    // }
+                  }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, quibusdam.
+                  {item?.description}
                 </Typography>
                 <Stack
                   direction="row"
@@ -154,27 +214,24 @@ export default function Projects() {
                       // my: 2,
                     }}
                   >
-                    <Chip
-                      label="React"
-                      size="small"
-                      variant="outlined"
-                      className={classes.projectTech}
-                    />
-                    <Chip
-                      label="MUI"
-                      size="small"
-                      variant="outlined"
-                      className={classes.projectTech}
-                    />
-                    <Chip
-                      label="React"
-                      size="small"
-                      variant="outlined"
-                      className={classes.projectTech}
-                    />
+                    {item?.tech.map((tech, index) => {
+                      return (
+                        <>
+                          <Chip
+                            label={tech}
+                            size="small"
+                            variant="outlined"
+                            className={classes.projectTech}
+                          />
+                        </>
+                      );
+                    })}
                   </Box>
                   <IconButton>
-                    <KeyboardArrowRightIcon className="moreIcon" />
+                    <KeyboardArrowRightIcon
+                      className="moreIcon"
+                      onClick={() => window.open(item?.link, "_blank")}
+                    />
                   </IconButton>
                 </Stack>
 

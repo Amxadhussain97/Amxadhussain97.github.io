@@ -22,21 +22,31 @@ export default function Education() {
           sx={{ borderRadius: "9px", p: 3 }}
         >
           <Box>
-            <Typography variant="h6" gutterBottom sx={{ fontWeight: "500",
-              fontSize:{
-                xs:'0.9rem',
-                sm:'1.5rem'
-              }
-             }}>
-              B.Sc in Computer Science
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                fontWeight: "500",
+                fontSize: {
+                  xs: "0.9rem",
+                  sm: "1.5rem",
+                },
+              }}
+            >
+              M.Sc in International Software Systems Science
             </Typography>
-            <Typography variant="caption" display="block" gutterBottom sx={{
-              fontSize:{
-                xs:'0.6rem',
-                sm:'0.9rem'
-              }
-            }}>
-              Leading University (2017-2020)
+            <Typography
+              variant="caption"
+              display="block"
+              gutterBottom
+              sx={{
+                fontSize: {
+                  xs: "0.6rem",
+                  sm: "0.9rem",
+                },
+              }}
+            >
+              University of Bamberg (2023 - present)
             </Typography>
 
             <Divider sx={{ my: 2 }} />
@@ -44,13 +54,15 @@ export default function Education() {
               variant="caption"
               display="block"
               gutterBottom
-              sx={{ fontSize: {
-                xs: "0.7rem",
-                sm: "0.9rem",
-              } }}
+              sx={{
+                fontSize: {
+                  xs: "0.7rem",
+                  sm: "0.9rem",
+                },
+              }}
             >
               The training provided by universities in order to prepare people
-              to work in various sectors of the economy or areas of culture.
+              to work in various sectors of computer science.
             </Typography>
           </Box>
         </Paper>
@@ -60,19 +72,30 @@ export default function Education() {
           sx={{ borderRadius: "9px", p: 3 }}
         >
           <Box>
-            <Typography variant="h6" gutterBottom sx={{ fontWeight: "500",
-               fontSize:{
-                xs:'0.9rem',
-                sm:'1.5rem'
-              } }}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                fontWeight: "500",
+                fontSize: {
+                  xs: "0.9rem",
+                  sm: "1.5rem",
+                },
+              }}
+            >
               B.Sc in Computer Science
             </Typography>
-            <Typography variant="caption" display="block" gutterBottom sx={{
-              fontSize:{
-                xs:'0.6rem',
-                sm:'0.9rem'
-              }
-            }}>
+            <Typography
+              variant="caption"
+              display="block"
+              gutterBottom
+              sx={{
+                fontSize: {
+                  xs: "0.6rem",
+                  sm: "0.9rem",
+                },
+              }}
+            >
               Leading University (2017-2020)
             </Typography>
 
@@ -81,13 +104,15 @@ export default function Education() {
               variant="caption"
               display="block"
               gutterBottom
-              sx={{ fontSize: {
-                xs: "0.7rem",
-                sm: "0.9rem",
-              } }}
+              sx={{
+                fontSize: {
+                  xs: "0.7rem",
+                  sm: "0.9rem",
+                },
+              }}
             >
               The training provided by universities in order to prepare people
-              to work in various sectors of the economy or areas of culture.
+              to work in various sectors of computer science.
             </Typography>
           </Box>
         </Paper>
